@@ -1,0 +1,61 @@
+.insVi-layout {
+    background: url(../../assets/images/cool-background.svg) no-repeat center/cover;
+    background-color: $black;
+}
+    
+
+.isv-page{
+    .red{
+        color: $red;
+        }
+.Inscription {
+    width: 500px;
+    height: 350px;
+    background: rgba(14, 27, 46, 0.51);
+    box-shadow: 4px 4px 108px rgba(255, 0, 0, 0.48);
+    border-radius: 8px;
+    
+}
+.Connexion {
+display: flex;
+width: 421px;
+height: 258px;
+background: rgba(14, 27, 46, 0.51);
+box-shadow: 4px 4px 108px rgba(255, 0, 0, 0.48);
+border-radius: 8px;
+flex-direction: column;
+}
+}
+
+@media screen and (max-width: 500px) {
+    
+    .isv-page{
+        font-size: 1.2em;
+        .ih-title{
+            font-size: 1.2em;
+            margin-left: 20px;
+            margin-top: 50px;
+          }
+    .Inscription {
+        width: 370px;
+        height: 400px;
+        background: rgba(14, 27, 46, 0.51);
+        box-shadow: 4px 4px 108px rgba(255, 0, 0, 0.48);
+        border-radius: 8px;
+    
+    }
+    .Connexion {
+    display: flex;
+    width: 370px;
+    height: 250px;
+    background: rgba(14, 27, 46, 0.51);
+    box-shadow: 4px 4px 108px rgba(255, 0, 0, 0.48);
+    border-radius: 8px;
+    flex-direction: column;
+    }
+}
+
+
+
+
+}

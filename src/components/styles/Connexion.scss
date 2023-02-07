@@ -1,0 +1,119 @@
+.AllC{
+    display: flex;
+    justify-content: center;
+}
+.connexion-titre {
+    width: 342px;
+    height: 52px;
+    font-family: $fontTitre;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 52px;
+    text-align: center;
+    color: $white;
+}
+
+.connect-pseudo  {
+    font-size: 20px;
+    padding: 20px;
+    width: 270px;
+    height: 40px;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), rgba(14, 27, 46, 0.74);
+    border-radius: 21px;
+    display: flex;
+    align-items: center;
+}
+.Connexion-MDP{
+    width: 270px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.connect-mdp  {
+    padding: 20px;
+    font-size: 20px;
+    width: 230px;
+    height: 40px;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), rgba(14, 27, 46, 0.74);
+    border-radius: 21px;
+
+}
+
+.connect {
+    // font-size: 20px;
+    font-family: $fontTitre;
+    box-sizing: border-box;
+    width: 80px;
+    height: 30px;
+    background: $white;
+    border: 2px solid $white;
+    box-shadow: 4px 4px 2px black;
+    border-radius: 53px;
+}
+.connect:hover {
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), rgba(14, 27, 46, 0.74);
+}
+
+.connect:active {
+
+    box-shadow: 0 5px #668;
+    transform: translateY(5px);
+}
+
+
+.connexion-sv .message, .Inscription-pseudo .message{
+    background: rgba(14, 27, 46, 0.51);
+    border-radius: 8px;
+    display: flex;
+    z-index: 5;
+    font-size: 30px;
+    border: 10px;
+    height: 200px;
+    width: 370px;
+    padding: 25px;
+    color: $white;
+    box-shadow: 3px 5px 9px $white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-shadow: 3px 2px 5px $white;
+    position: absolute;
+    margin-top: 100px;
+    a{
+        color: $white;
+    }
+    
+}
+.connexion-vilain .Connexion {
+    display: flex;
+    width: 421px;
+    height: 258px;
+    flex-direction: column;
+    background: rgba(247, 247, 247, 0.3);
+    box-shadow: 4px 4px 108px rgba(0, 175, 255, 0.29);
+    border-radius: 8px;
+    background: rgba(14, 27, 46, 0.51);
+  }
+.connexion-sv .Connexion{
+    background: rgba(14, 27, 46, 0.51);
+    box-shadow: 4px 4px 108px rgba(255, 0, 0, 0.33);
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.connexion-sv .Connexion label{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+@media screen and (max-width:500px)  {
+ 
+    .test-layout .Card-container{
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        
+    }
+}

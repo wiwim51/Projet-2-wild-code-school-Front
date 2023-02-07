@@ -1,0 +1,44 @@
+/* Colors */
+
+$red: #FF0000;
+$blue: #00AFFF;
+$black: #12181F;
+$grey: #2a2a2a;
+$white: #f7f7f7;
+$whiteOpacity: #f7f7f730;
+
+
+/* images */
+
+$bghome: url(./assets/images/bghome.png);
+
+
+/* mixins */
+
+@font-face {
+    font-family: FELL-French;
+    src: url('./assets/fonts/FELL-French.ttf');
+    font-weight: 300;
+    
+}  
+
+@mixin flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* fonts */
+
+$fontTitre : 'IMFell';
+$fontTexte : 'Barlow';
+
+@font-face {
+    font-family: $fontTitre;
+    src: url(./assets/fonts/IMFellFrenchCanon-Regular.ttf)
+}
+@font-face {
+    font-family: $fontTexte;
+    src: url(./assets/fonts/IMFellFrenchCanon-Regular.ttf)
+}

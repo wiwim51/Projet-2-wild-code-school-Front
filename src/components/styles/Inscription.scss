@@ -1,0 +1,174 @@
+.isv-page{
+    margin-top: 150px;
+}
+.responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  height: 60vh;
+
+}
+
+.inscrip {
+    font-family: "IMFell";
+    font-weight: 300;
+    font-size: 45px;
+    color: #f7f7f7;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.inputForm {
+    font-size: 20px;
+    color: $black;
+    width: 300px;
+    height: 40px;
+    padding: 20px;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), rgba(14, 27, 46, 0.74);
+    border-radius: 21px;
+}
+
+.ih-title {
+    font-family: "IMFell";
+    font-size: 2em;
+    color: #f7f7f7;
+    margin-left: 80px;
+    margin-top: 80px;
+}
+
+
+.mess {
+    font-family: $fontTitre;
+    text-transform: uppercase;
+}
+
+.I-button {
+    font-family: $fontTitre;
+    // font-size: 20px;
+    box-sizing: border-box;
+    width: 80px;
+    height: 30px;
+    background: $white;
+    border: 2px solid $white;
+    box-shadow: 4px 4px 2px black;
+    border-radius: 53px;
+}
+
+.I-button:hover {
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), rgba(14, 27, 46, 0.74);
+}
+
+.I-button:active {
+
+    box-shadow: 0 5px #668;
+    transform: translateY(5px);
+}
+
+.responsive {
+    .Inscription-pseudo{
+        .inpForm{
+                width: 350px;
+        }
+    }
+    .inpForm {
+        @extend .inputForm;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        justify-content: center;
+        div{
+            width: 350px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+    }
+
+    .I-button{
+        top:470px;
+        left:188px;
+    }
+
+}
+
+.Line {
+    margin: 10px 50px;
+}
+
+.red {
+    color: $red;
+}
+
+.All {
+    display: flex;
+    justify-content: center;
+
+}
+
+input[type=checkbox] {
+    accent-color: grey;
+    width: 20px;
+    height: 20px;
+
+}
+@media screen and (max-width:500px)  {
+    .isv-page{
+    margin-top: 100px;
+    }
+    .responsive{
+        height: 70vh;
+    }
+    .All {
+        display: flex;
+        justify-content: center;
+    .inscrip {
+        width: 342px;
+        height: 52px;
+    }
+    
+    
+    .check2 {
+        position: absolute;
+        top: 290px;
+        left: 317px;
+    }
+    
+    
+    .ih-title{
+        width: 100%;
+        font-family: $fontTitre;
+        font-style: normal;
+        font-size: 1em;
+    }
+}
+    .inputForm {
+        font-size: 20px;
+        color: $black;
+        font-family: $fontTexte;
+        width: 320px;
+        height: 40px;
+        padding: 20px;
+        background: linear-gradient(0deg, #FFFFFF, #FFFFFF), rgba(14, 27, 46, 0.74);
+        border-radius: 21px;
+    }
+    
+    .Inscription-pseudo .I-button {
+        width: 80px;
+        height: 30px;
+        top: 355px;
+        left: 143px;
+    }
+    
+    .Line {
+        width: 330px;
+        margin: 10px 10px;
+    }
+
+.isv-page input[type=checkbox]{
+    width: 23px;
+    height: 21px;
+}
+}

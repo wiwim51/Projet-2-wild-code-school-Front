@@ -1,0 +1,23 @@
+.panier-layout {
+    background: url("../../assets/images/cool-background\ 2.png") no-repeat bottom left;
+    background-color: $black;
+    background-position-x: -150px;
+}
+.globalScreen {
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     width: 90vw;
+    margin: auto;
+}
+
+.ligneR {
+    transform: rotate(180deg);
+
+}
+@media screen and (max-width: 820px){
+    .globalScreen{
+        flex-direction: column;
+    }
+}

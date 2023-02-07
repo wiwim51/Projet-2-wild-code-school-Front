@@ -1,0 +1,117 @@
+.filterCatalogue{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    .filterRow {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        select, input, button{
+            font-family: $fontTitre;
+            background-color: $white;
+            width: 30%;
+            height: 50px;
+            border-radius: 0px;
+            border: 0;
+            font-size: 1.8em;
+            text-align: center;
+            box-shadow: 0px 4px 17px rgba(0, 175, 255, 0.93);
+        }
+        option{
+            font-family: $fontTitre;
+        }
+        select{
+            width:45%
+        }
+        .blockFilterChoise{
+            display: flex;
+            justify-content: space-between;
+            width: 64%;
+            .filterChoice{
+                justify-content: center;
+                display: flex;
+                width: 45%;
+                gap: 5px;
+                input{
+                    max-width: 220px;
+                    width: 100%;
+                
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .blockFilterCatalogue {
+        .filterRow{
+            .blockFilterChoise{
+                width: 90%;
+            }
+            .delete{
+                width: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width:800px) {
+    .blockFilterCatalogue {
+        .filterRow{
+            border: solid $red;
+            padding: 10px;
+            .blockFilterChoise{
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+                gap: 20px;
+                select{
+                    width: 80%;
+                }
+                .filterChoice{
+                    justify-content: center;
+                    display: flex; 
+                    width: 80%;
+                }
+            }
+        }
+    }
+}
+/* .filterCatalogue{
+    width: 50%;
+    @include flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 5px 0px;
+    select, .delete {
+        background-color: $white;
+        font-family: $fontTexte;
+        border: solid 1px $black;
+        height: 40px;
+        padding: 10px;
+        width: 180px;
+    }
+    .filterRow{
+        margin: 5px 0px;
+        display: flex;
+        gap: 30px;
+    }
+    .filterListcategory{
+        width: 160px;
+    }
+    .delete{
+        width: 50px;
+    }
+}
+.filterChoice{
+    input{    
+        width: 90px;
+        background-color: $white;
+        font-family: $fontTexte;
+        border: solid 1px $black;
+        height: 40px;
+        padding: 10px;
+    }
+} */

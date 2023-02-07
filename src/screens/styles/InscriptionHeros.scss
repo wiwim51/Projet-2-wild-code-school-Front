@@ -1,0 +1,108 @@
+.insch-layout {
+    background: url(../../assets/images/cool-background-b.svg) no-repeat center/cover;
+    // background-size: contain;
+    background-color: $black;
+}
+.ih-page{
+    width:100vw;
+    height: 55vh;
+    margin-bottom: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 150px;
+}
+.ih-page h3{
+    color:$white;
+}
+.ih-title{
+// height: 8vh;
+font-family: $fontTitre;
+font-style: normal;
+// font-weight: 400;
+font-size: 34px;
+// line-height: 7vh;
+/* identical to box height */
+
+
+color: #F7F7F7;
+
+}
+.ih-container h2 {
+    font-size: 22px;
+    color: $white;
+    padding: 50px 0 42px 0;
+    font-family: $fontTitre;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    position: relative;
+}
+.Inscription {
+    width: 421px;
+    height: 435px;
+    background: rgba(247, 247, 247, 0.3);
+    box-shadow: 4px 4px 108px rgba(0, 175, 255, 0.29);
+    border-radius: 8px;
+    background: rgba(14, 27, 46, 0.51);
+}
+.connexion-hero .Connexion {
+    display: flex;
+    width: 421px;
+    height: 258px;
+    flex-direction: column;
+    background: rgba(247, 247, 247, 0.3);
+    box-shadow: 4px 4px 108px rgba(0, 175, 255, 0.29);
+    border-radius: 8px;
+    background: rgba(14, 27, 46, 0.51);
+  }
+.blue{
+    color: $blue;
+}
+.connexion-hero{
+    margin-right: 200px;
+    .connexion-sv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 200px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .ih-page{
+        flex-direction: column;
+        height: 150vh;
+        margin-top: 100px;
+    }
+    .connexion-hero{
+        margin-right: 0;
+    }
+    .ih-page .ih-title{
+        margin-left: 20px;
+        margin-right: 0;
+        margin-top: 0;
+        font-size: 1.4em;
+    }
+    .Inscription {
+        width: 370px;
+        height: 400px;
+        background: rgba(247, 247, 247, 0.3);
+        box-shadow: 4px 4px 108px rgba(0, 175, 255, 0.29);
+        border-radius: 8px;
+    }
+
+    .Connexion{
+    width: 370px;
+    height: 258px;
+    left: 10px;
+    top: 1000px;
+    flex-direction: column;
+    }
+    .connect {
+    width: 140px;
+    height: 40px;
+    }
+}

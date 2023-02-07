@@ -1,0 +1,12 @@
+.resultatCatalogue{
+    min-height: 66vh;
+    width: 70vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 50px;
+    padding: 100px 0px;
+}
+.test li{
+    color : $white;
+}

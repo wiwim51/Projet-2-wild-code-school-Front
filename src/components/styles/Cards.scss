@@ -1,0 +1,234 @@
+//-----------CSS Modal------------//
+.backgroundModal {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    z-index: 4000;
+}
+
+.containerModal {
+    
+    background-color: $white;
+    width: 50vw;
+    height: 100vh;
+    border: 10px;
+    border-style: double;
+    border-radius: 5px;
+}
+//------------HEADER---------//
+.wanted {
+    font-family: $fontTitre;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.powerList {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 10px;
+    font-size: 25px;
+    font-family: $fontTexte;
+}
+//-----------BODY------------//
+
+        //Image & Caract//
+.profilPicture img {
+    border-style: solid;
+    width: 24vw;
+    height: 49vh;
+    
+}
+
+.bodyCards {
+    display: flex;
+    background-color: $white;
+    margin: 5px;
+}
+
+.caractPerso {
+    background-color: $white;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 24vw;
+    height: 49vh;
+    list-style: none;
+    margin-left: 5px;
+  
+}
+
+.l1, .l2, .l3, .l4, .l5, .l6, .l7, .l8 {
+    border: 2px black solid;
+    border-radius: 1px;
+}
+
+.l1 { 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    grid-area: 1 / 1 / 2 / 2;
+     
+}
+.l2 { 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    grid-area: 1 / 2 / 2 / 3; 
+}
+.l3 { 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    grid-area: 2 / 1 / 3 / 2; 
+}
+.l4 { 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    grid-area: 2 / 2 / 3 / 3; 
+}
+.l5 { 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    grid-area: 3 / 1 / 4 / 2; 
+}
+.l6 { 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    grid-area: 3 / 2 / 4 / 3; 
+}
+.l7 { 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    grid-area: 4 / 1 / 5 / 2; 
+}
+.l8 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    grid-area: 4 / 2 / 5 / 3; 
+}
+.l8 img {
+    height: 10vh;
+}
+//------------FOOTER--------//
+.descriptions {
+    border-style: solid;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 15px;
+    
+}
+
+.descriptions p {
+    font-family: $fontTexte;
+    font-size: 24px;
+}
+
+.highFooter {
+    display: flex;
+    background-color: rgb(58, 58, 58);
+    justify-content: space-around;
+    font-size: 35px;
+}
+
+.highFooter h3 {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.caractPerso li h3 {
+    font-size: 40px;
+    font-family: $fontTitre;
+}
+
+.caractPerso li p {
+    font-size: 30px;
+    font-family: $fontTexte;
+    margin: 10px;
+}
+
+
+.footer {
+    margin-top: 15px;
+}
+//------BUTTON SHOP--------//
+.blockButtonShop{
+    display: flex;
+    justify-content: center;
+}
+.buttonShop {
+    background-color: rgb(86, 244, 86);
+    height: 40px;
+    width: 150px;
+    border-radius: 20px;
+    margin: 20px;
+    font-family: $fontTitre;
+}
+
+@media screen and (max-width: 768px) {
+    .backgroundModal {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        z-index: 4000;
+    
+    }
+
+    .containerModal{
+        position: fixed;
+        display: flex;
+        height: 84vh;
+        width: 100vw;
+        flex-direction: column;
+        left: 0;
+    }
+
+    .bodyCards {
+        display: flex;
+    }
+
+
+    .profilPicture img {
+        width: 335px;
+    }
+
+    .buttonShop {
+        margin: 1px;
+    }
+
+    .descriptions {
+        height: 30px;
+    }
+
+    .descriptions p {
+        overflow: scroll;
+        height: 28px;
+    }
+}
